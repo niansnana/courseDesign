@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #eee;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 320px;
+  height: 320px;
+  /* z-index: 0; */
+}
+.player {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.3);
+  z-index: 300;
+  position: relative;
+}
+/*专辑封面 */
+.player img {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.75; /*透明度75%*/
+  transform: scale(1);
+}
+.player .prev,
+.player .show,
+.player .next,
+.player .loop,
+.player .random {
+  position: absolute;
+  font-size: 2em;
+}
+/* 上一首，播放，下一首 */
+.player .prev i,
+.player .show i,
+.player .next i {
+  font-size: 1.5em;
+  color: #fff;
+}
+.player .prev i:hover,
+.player .show i:hover,
+.player .next i:hover {
+  transition: 0.3s all;
+  color: rgb(8, 168, 0);
+}
+/* 单曲循环，随机播放 */
+.player .loop i,
+.player .random i {
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.player .loop i:hover,
+.player .random i:hover {
+  transition: 0.5s all;
+  color: rgb(216, 30, 6);
+}
+
+.player .prev {
+  left: 20%;
+  bottom: 25%;
+}
+.player .show {
+  left: 44%;
+  bottom: 25%;
+}
+.player .next {
+  right: 15%;
+  bottom: 25%;
+}
+/* 单曲循环和随机播放 */
+.player .loop {
+  left: 10%;
+  bottom: 23%;
+}
+.player .random {
+  right: 8%;
+  bottom: 23%;
+}
+
+.container .player input{
+  position: absolute;
+  left: 32%;top: 10%;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 2px 0 rgb(0, 0, 0, .3);
+}
+
+/* 歌词 */
+.container .words{
+  position: absolute;
+  left: 20%;top: 69%;
+  z-index: 1000;
+  height: 80px;
+  overflow: hidden;
+}
+.container .words div{
+  text-align: center;
+  /* z-index: 1000; */
+}
+.container .words div h1{
+  font-size: 1.3em;
+}
+.container .words #b:target{
+  display: block;
+  margin-right: 73px;
+}
+.container .words #c:target{
+  display: block;
+}
+.container .words div marquee{
+  height: 100px;
+  overflow: hidden;
+  color: #000;
+  z-index: 1000;
+  text-align: center;
+}
+.container .words div i{
+  transition: .5s all;
+}
+
+/* 世界美好与你环环相扣 */
+.container .words #b{
+  margin-right: 20px;
+}
+/* 大地 */
+.container .words #a,
+.container .words #c{
+  margin-right: 30px;
+}
+
+
+
+.all{
+  position: relative;
+  left: 0;bottom: 35%;
+
+}

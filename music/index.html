@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>for long long with you</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1510455_1x9ynfs3qoqj.css">
+    <link rel="stylesheet" href="./css/music.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- 播放功能界面 -->
+        <div class="player">
+            <!-- 插入音频 -->
+            <audio src="audio/for long long with you.mp3"></audio>
+            <audio src="./audio/thta's beautiful with you.mp3"></audio>
+            <audio src="./audio/big big floor.mp3"></audio>
+            <!-- 引入专辑图片 -->
+            <img src="img/music.jpg" />
+
+            <div class="all" id="all">
+                <!-- 上一首 -->
+                <a href="#b" class="prev" onclick="toPrev()"><i class="iconfont icon-xiayishou-copy-copy"></i>
+                </a>
+                <!-- 播放歌曲 -->
+                <button type="button" class="show" id="show" onclick="showTime(audioOne)">
+                    <i class="iconfont icon-bofang" id="stop"></i>
+                </button>
+                <!-- 下一首 -->
+                <a href="#c" class="next" onclick="toNext()">
+                    <i class="iconfont icon-xiayishou-copy"></i>
+                </a>
+                <!-- 单曲循环 -->
+                <button type="button" class="loop"><i class="iconfont icon-danquxunhuan1"></i></button>
+                <!-- 随机播放 -->
+                <button type="button" class="random"><i class="iconfont icon-suijibofang"></i></button>
+
+                <input type="range" max="1" min="0" step="0.1" id="volumn" onchange="setvolumn()" />
+            </div>
+        </div>
+        <!-- 播放歌词界面 -->
+        <label class="to-lyrics-label" for="to-lyrics">
+            <i class="fa fa-caret-down fa-lg"></i>
+        </label>
+        <div class="words">
+            <!-- 陪你度过漫长岁月 -->
+            <div id="a">
+                <h1>陪你度过漫长岁月</h1>
+                <h4>陈奕迅</h4>
+                <i class="iconfont icon-shangjiantou2" onclick="toload()"></i>
+                <br>
+                <marquee loop scrolldelay="300" direction="up">
+                    走过了人来人往<br>
+                    不喜欢也得欣赏<br>
+                    我是沉默的存在<br>
+                    不当你的世界 只作你肩膀<br>
+                    曲谱<br>
+                    曲谱<br>
+                    拒绝成长到成长<br>
+                    变成想要的模样<br>
+                    在举手投降以前<br>
+                    让我再陪你一段<br>
+                    陪你把沿路感想活出了答案<br>
+                    陪你把独自孤单变成了勇敢<br>
+                    一次次失去又重来 我没离开<br>
+                    陪伴是 最长情的告白<br>
+                    陪你把想念的酸 拥抱成温暖<br>
+                    陪你把彷徨 写出情节来<br>
+                    未来多漫长 再漫长 还有期待<br>
+                    陪伴你 一直到 故事给说完<br>
+                    让我们静静分享<br>
+                    此刻难得的坦白<br>
+                    只是无声地交谈<br>
+                    都感觉幸福 感觉不孤单<br>
+                    陪你把沿路感想 活出了答案<br>
+                    曲谱<br>
+                    曲谱<br>
+                    陪你把独自孤单 变成了勇敢<br>
+                    一次次失去 又重来 我没离开<br>
+                    陪伴是 最长情的告白<br>
+                    陪你把想念的酸 拥抱成温暖<br>
+                    陪你把彷徨 写出情节来<br>
+                    未来多漫长 再漫长 还有期待<br>
+                    陪伴你 一直到 故事给说完<br>
+                    陪你把沿路感想 活出了答案<br>
+                    陪你把独自孤单 变成了勇敢<br>
+                    一次次失去 又重来 我没离开<br>
+                    曲谱<br>
+                    曲谱<br>
+                    陪伴是 最长情的告白<br>
+                    陪你把想念的酸 拥抱成温暖<br>
+                    陪你把彷徨 写出情节来<br>
+                    未来多漫长 再漫长 还有期待<br>
+                    陪伴你 一直到 这故事说完<br>
+                </marquee>
+            </div>
+            <!-- 世界美好与你环环相扣 -->
+            <div id="b">
+                <h1>世界美好与你环环相扣</h1>
+                <h4>柏松</h4>
+                <i class="iconfont icon-shangjiantou2" onclick="toload()"></i>
+                <br>
+                <marquee loop scrolldelay="300" direction="up">
+                    <p>偏偏秉烛夜 游</p>
+                    <p>午夜星辰 似奔走之友</p>
+                    <p>爱你每个结痂伤口</p>
+                    <p>酿成的陈年烈酒</p>
+                    入喉尚算可口<br>
+                    怎么泪水 还偶尔失守<br>
+                    邀你细看心中缺口<br>
+                    裂缝中留存 温柔<br>
+                    此时已莺飞草长 爱的人正在路上<br>
+                    我知他风雨兼程 途经日暮不赏<br>
+                    穿越人海 只为与你相拥<br>
+                    此刻已皓月当空 爱的人手捧星光<br>
+                    我知他乘风破浪 去了黑暗一趟<br>
+                    感同身受 给你救赎热 望<br>
+                    知道你不能 还要你感受<br>
+                    让星光加了一点彩虹<br>
+                    让樱花偷偷 吻你额头<br>
+                    让世间美好 与你环环相扣<br>
+                    此时已莺飞草长 爱的人正在路上<br>
+                    我知他风雨兼程 途经日暮不赏<br>
+                    穿越人海 只为与你相拥<br>
+                    此刻已皓月当空 爱的人手捧星光<br>
+                    我知他乘风破浪 去了黑暗一趟<br>
+                    感同身受 给你救赎热 望<br>
+                    此时已莺飞草长 爱的人正在路上<br>
+                    我知他风雨兼程 途经日暮不赏<br>
+                    穿越人海 只为与你相拥<br>
+                    此刻已皓月当空 爱的人手捧星光<br>
+                    我知他乘风破浪 去了黑暗一趟<br>
+                    感同身受 给你救赎热 望<br>
+                    知道你不能 还要你感受<br>
+                    让星光加了一点彩虹<br>
+                    当樱花开的纷纷扬扬<br>
+                    当世间美好 与你环环相扣<br>
+                </marquee>
+            </div>
+            <!-- 大地 -->
+            <div id="c">
+                <h1>大地</h1>
+                <h4>Byond</h4>
+                <i class="iconfont icon-shangjiantou2" onclick="toload()"></i>
+                <br>
+                <marquee loop scrolldelay="300" direction="up">
+                    在那些苍翠的路上<br>
+                    历遍了多少创伤<br>
+                    在那张苍老的面上<br>
+                    亦记载了风霜<br>
+                    秋风秋雨的度日<br>
+                    是青春少年时<br>
+                    迫不得已的话别<br>
+                    没说再见<br>
+                    回望昨日在异乡那门前<br>
+                    唏嘘的感慨一年年<br>
+                    但日落日出永没变迁<br>
+                    这刻在望着父亲笑容时<br>
+                    竟不知不觉的无言<br>
+                    让日落暮色渗满泪眼<br>
+                    在那些开放的路上<br>
+                    踏碎过多少理想<br>
+                    在那张高挂的面上<br>
+                    被引证了几多<br>
+                    千秋不变的日月<br>
+                    在相识里共存<br>
+                    姑息分割的大地<br>
+                    划了界线<br>
+                    回望昨日在异乡那门前<br>
+                    唏嘘的感慨一年年<br>
+                    但日落日出永没变迁<br>
+                    这刻在望着父亲笑容时<br>
+                    竟不知不觉的无言<br>
+                    让日落暮色渗满泪眼<br>
+                    回望昨日在异乡那门前<br>
+                    唏嘘的感慨一年年<br>
+                    但日落日出永没变迁<br>
+                    这刻在望着父亲笑容时<br>
+                    竟不知不觉的无言<br>
+                    让日落暮色渗满泪眼<br>
+                    回望昨日在异乡那门前<br>
+                    唏嘘的感慨一年年<br>
+                    但日落日出永没变迁<br>
+                    这刻在望着父亲笑容时<br>
+                    竟不知不觉的无言<br>
+                    让日落暮色渗满泪眼<br>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <script src="./js/music.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,540 @@
+/* 
+  主区域居中展示内容 
+*/
+.wrapper .container {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wrapper .container .nav {
+  width: 110px;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 6px;
+}
+.wrapper .container .nav a {
+  border-radius: 5px;
+  width: 94px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  color: #000;
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+.wrapper .container .nav a:hover {
+  background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+  color: #fff;
+}
+.wrapper .container .nav :nth-child(1):hover {
+  color: #000;
+  background-color: none;
+}
+.active {
+  background: linear-gradient(128deg, #fa2f2f 0%, #ff5b36 90%);
+  color: #fff !important;
+}
+/* 居中的居中内容 */
+.wrapper .container .content {
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: 37%;
+  margin: 0 10px;
+  /* overflow: auto; */
+  overflow: hidden;
+}
+/* 轮播图 */
+.wrapper .container .content .carouselMap {
+  width: 660px;
+  height: 300px;
+}
+.wrapper .container .content .carouselMap .mapimg {
+  width: 660px;
+  height: 280px;
+}
+.wrapper .container .content .carouselMap .mapimg .img {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .container .content .carouselMap .mapimg .img .bigimg {
+  width: 510px;
+  height: 280px;
+  margin-right: 10px;
+  position: relative;
+}
+.wrapper .container .content .carouselMap .mapimg .img .bigimg img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .content .carouselMap .mapimg .img .bigimg a .title {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: #fff;
+}
+.wrapper .container .content .carouselMap .mapimg .img .bigimg a .title h1 {
+  color: rgb(254, 254, 254);
+  font-size: 1.5em;
+  margin-bottom: 6px;
+}
+.wrapper .container .content .carouselMap .mapimg .img .bigimg a .title span {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+}
+.wrapper .container .content .carouselMap .mapimg .img .smallimg {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 280px;
+}
+.wrapper .container .content .carouselMap .mapimg .img .smallimg a {
+  display: block;
+  width: 140px;
+  height: 135px;
+}
+.wrapper .container .content .carouselMap .mapimg .img .smallimg :nth-child(1) {
+  margin-bottom: 10px;
+}
+.wrapper .container .content .carouselMap .mapimg .img .smallimg img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .content .carouselMap .mapimg .img .smallimg a {
+  position: relative;
+}
+.wrapper .container .content .carouselMap .mapimg .img .smallimg a span {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* 轮播图的小点 */
+.wrapper .container .content .carouselMap .mapnod {
+  width: 660px;
+  height: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+.wrapper .container .content .carouselMap .mapnod span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgb(204, 204, 204);
+  margin: 0 5px;
+}
+.wrapper .container .content .carouselMap .mapnod .spanactive {
+  background-color: rgb(250, 125, 60);
+}
+/* 主要新闻内容开始展示 */
+/* 未读新消息 */
+.wrapper .container .content .newmessage {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ed7350;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(255, 253, 236);
+  position: relative;
+}
+.wrapper .container .content .newmessage i {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: #696e78;
+  font-weight: bold;
+}
+/* 第一种纯横向新闻展示 */
+.wrapper .container .content .model,
+.wrapper .container .content .plate {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  cursor: pointer;
+  font-size: 14px;
+}
+.wrapper .container .content .model {
+  padding-top: 0;
+}
+.wrapper .container .content .model .modelimg {
+  width: 158px;
+  height: 102px;
+  margin-right: 13px;
+}
+.wrapper .container .content .model .modelimg img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .content .model .article {
+  width: 489px;
+  height: 102px;
+}
+.wrapper .container .content .model .article .showtxt a {
+  font-size: 14px;
+  min-height: 48px;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.wrapper .container .content .model .article .moreinfo,
+.wrapper .container .content .template .moreinfo {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+.wrapper .container .content .model .article .moreinfo .user,
+.wrapper .container .content .template .moreinfo .user {
+  display: flex;
+  color: #808080;
+  font-size: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper .container .content .model .article .moreinfo .user a,
+.wrapper .container .content .template .moreinfo .user a {
+  display: flex;
+  align-items: center;
+}
+.wrapper .container .content .model .article .moreinfo .user a img,
+.wrapper .container .content .template .moreinfo .user a img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.wrapper .container .content .model .article .moreinfo .user a p,
+.wrapper .container .content .template .moreinfo .user a p {
+  margin-left: 5px;
+}
+.wrapper .container .content .model .article .moreinfo .user span,
+.wrapper .container .content .template .moreinfo .user a span {
+  margin-left: 10px;
+}
+/* 素质三连 */
+.wrapper .container .content .model .article .moreinfo .more,
+.wrapper .container .content .template .moreinfo .more {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+.wrapper .container .content .model .article .moreinfo .more a,
+.wrapper .container .content .template .moreinfo .more a,
+.wrapper .container .content .plate .txt .more a {
+  margin-right: 5px;
+}
+.wrapper .container .content .model .article .moreinfo .more a::after,
+.wrapper .container .content .template .moreinfo .more a::after,
+.wrapper .container .content .plate .txt .more a::after {
+  content: "丨";
+  display: inline-block;
+  color: rgb(204, 204, 204);
+}
+.wrapper .container .content .model .article .moreinfo .more :nth-child(3)::after,
+.wrapper .container .content .template .moreinfo .more :nth-child(3)::after,
+.wrapper .container .content .plate .txt .more :nth-child(3)::after {
+  content: "";
+}
+.wrapper .container .content .model .article .moreinfo .more a span,
+.wrapper .container .content .template .moreinfo .more a span,
+.wrapper .container .content .plate .txt .more a span {
+  vertical-align: 0;
+}
+.wrapper .container .content .model .article .moreinfo .more i,
+.wrapper .container .content .template .moreinfo .more i,
+.wrapper .container .content .plate .txt .more i {
+  margin-right: 1px;
+}
+.wrapper .container .content .model .article .moreinfo .more i:hover,
+.wrapper .container .content .template .moreinfo .more i:hover,
+.wrapper .container .content .plate .txt .more i:hover {
+  color: #eb7350;
+}
+
+/* 第二种样式新闻模板展示 */
+.wrapper .container .content .template {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  cursor: pointer;
+  font-size: 14px;
+}
+.wrapper .container .content .template .photo {
+  width: 670px;
+  height: 102px;
+}
+.wrapper .container .content .template .photo img {
+  width: 152px;
+  height: 102px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.wrapper .container .content .template .moreinfo {
+  margin-top: 15px;
+}
+/* 第三种模板，写完就解放了 */
+.wrapper .container .content .plate .video {
+  width: 170%;
+  height: 170px;
+  position: relative;
+}
+.wrapper .container .content .plate .video img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .content .plate .video i {
+  position: absolute;
+  left: 42%;
+  top: 39%;
+  color: #fff;
+  font-size: 3em;
+}
+.wrapper .container .content .plate .video i:hover {
+  color: rgb(253, 129, 73);
+}
+.wrapper .container .content .plate .txt {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+}
+.wrapper .container .content .plate .txt :nth-child(1) span {
+  color: rgb(235, 115, 80);
+}
+.wrapper .container .content .plate .txt :nth-child(2) img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.wrapper .container .content .plate .txt .more {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper .container .content .plate .txt .more :nth-child(1) span {
+  color: #000;
+}
+/* 啊啊啊，终于右边导航栏了 */
+/* 用户登录 */
+.wrapper .container .news {
+  width: 18%;
+}
+.wrapper .container .news form,
+.wrapper .container .news .hottopic,
+.wrapper .container .news .searchPerson,
+.wrapper .container .news .complaint {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(242, 242, 245);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.wrapper .container .news form .login {
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.wrapper .container .news form .login .btn {
+  height: 44px;
+  font-size: 1.5em;
+}
+.wrapper .container .news form .login .btn button {
+  width: 135px;
+  height: 33px;
+  color: #999;
+}
+.wrapper .container .news form .login .btn .btnactive {
+  border-bottom: 3px solid #fa7d3c;
+  color: #000;
+  font-weight: bold;
+}
+.wrapper .container .news form .login .account .user,
+.wrapper .container .news form .login .account .pass {
+  position: relative;
+  margin-bottom: 10px;
+}
+.wrapper .container .news form .login .account input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #999;
+  text-indent: 2.5em;
+}
+.wrapper .container .news form .login .account input:focus {
+  border: 1px solid rgb(250, 125, 60);
+}
+.wrapper .container .news form .login .account i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.wrapper .container .news form .login .check {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+  color: #999;
+}
+.wrapper .container .news form .login .check label span {
+  vertical-align: 0;
+}
+.wrapper .container .news form .login .check a:hover {
+  color: #eb7350;
+}
+.wrapper .container .news form .login .gologin {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .container .news form .login .gologin button {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  background-color: rgb(255, 129, 64);
+  margin: 10px 0;
+}
+.wrapper .container .news form .login .gologin button:active {
+  background-color: orangered;
+}
+.wrapper .container .news form .login .gologin span {
+  font-size: 12px;
+  color: #999;
+}
+.wrapper .container .news form .login .gologin span a {
+  color: #eb7350;
+}
+.wrapper .container .news form .login .else {
+  margin-top: 10px;
+  border-top: 1px solid #999;
+  padding-top: 10px;
+  display: flex;
+}
+.wrapper .container .news form .login .else a {
+  margin-right: 5px;
+  color: #eb7350;
+}
+/* 热门话题 */
+.wrapper .container .news .hottopic,
+.wrapper .container .news .searchPerson,
+.wrapper .container .news .complaint {
+  border-top: 1px solid rgb(250, 47, 47);
+}
+.wrapper .container .news .hottopic .title h1,
+.wrapper .container .news .searchPerson .title h1 {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+.wrapper .container .news .hottopic .item {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.wrapper .container .news .hottopic .item .img {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.wrapper .container .news .hottopic .item .img img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .news .hottopic .item .txt {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin-bottom: 7px;
+}
+.wrapper .container .news .hottopic .item .txt a:hover {
+  color: #eb7350;
+}
+.wrapper .container .news .hottopic .item .txt span {
+  font-size: 10px;
+}
+.wrapper .container .news .hottopic .over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #999;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+/* 微博找人 */
+.wrapper .container .news .searchPerson .item h2 {
+  font-size: 20px;
+  color: rgb(178, 178, 179);
+}
+.wrapper .container .news .searchPerson .item .list {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom: 1px solid #999;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.wrapper .container .news .searchPerson .item .list a {
+  margin-bottom: 20px;
+  flex: 0 0 33%;
+}
+.wrapper .container .news .searchPerson .item .list a i {
+  margin-right: 3px;
+}
+.wrapper .container .news .searchPerson :nth-child(5) .list {
+  border-bottom: none;
+  margin-bottom: -10px;
+}
+/* 微博投诉 */
+.wrapper .container .news .complaint {
+  font-size: 12px;
+  cursor: pointer;
+}
+.wrapper .container .news .searchPerson .item .list a span:hover,
+.wrapper .container .news .complaint a:hover {
+  color: #fa7d3c;
+}
+.wrapper .container .content .newmessage.newmess {
+  margin-top: 20px;
+}
+.wrapper .container .content .newmessage.newmess i {
+  position: absolute;
+  top: 0px;
+  left: -150px;
+  color: rgb(255, 136, 74);
+  animation: running 0.8s linear infinite;
+}
+@keyframes running {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

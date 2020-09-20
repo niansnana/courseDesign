@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .lc_carouselMap {
+            width: 340px;
+            height: 255px;
+            margin: 8px 0;
+            /* overflow: hidden;  */
+        }
+
+        .lc_carouselMap img {
+            width: 100%;
+            height: 100%;
+            float: left;
+        }
+
+        .zindex {
+            display: block;
+        }
+
+        .zindex0 {
+            display: none;
+        }
+
+        .lc_carouselMap .node {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+        }
+
+        .lc_carouselMap .node li {
+            width: 14px;
+            height: 14px;
+            line-height: 14px;
+            display: block;
+            text-align: center;
+            opacity: 0.7;
+            background-color: #6c6d6e;
+            float: left;
+            color: #fff;
+            margin-right: 8px;
+            border: 1px solid #fff;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .lc_carouselMap .node .nodeActive {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lc_carouselMap" id="div_c">
+        <a href="#"><img class="zindex" src="../img/1574221753555396-lp.jpg" alt=""></a>
+        <a href="#"><img class="zindex0" src="../img/1574222129973999-lp.jpg" alt="" /></a>
+        <a href="#"><img class="zindex0" src="../img/1574222290223265-lp.jpg" alt="" /></a>
+        <a href="#"><img class="zindex0" src="../img/1574234573222792-lp.jpg" alt="" /></a>
+        <ul class="node" id="oul">
+            <li class="nodeActive">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</body>
+
+</html>

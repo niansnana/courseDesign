@@ -1,0 +1,239 @@
+@import url("./reset.css");
+html{
+	width: 100%;height: 100%;
+	min-height: 100%;
+}
+body{
+	height: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.header{
+	width: 100%;height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(126, 206, 244);
+}
+.header .icon{
+	width: 30px;height: 30px;
+}
+.header .icon img{
+	width: 100%;height: 100%;
+}
+.header .search{
+	width: 80%;height: 30px;
+	display: flex;
+	position: relative;
+	margin-left: 15px;
+}
+.header .search img{
+	width: 15px;height: 15px;
+	position: absolute;
+	/* top: 25%;left: 20%; */
+	top: 25%;right: 2.6%;
+}
+.header .search input{
+	width: 100%;
+	background-color: rgb(104, 178, 213);
+	font-size: .9em;
+	/* text-align: center; */
+	overflow: hidden;
+	border-radius: 3px;
+	padding-left: 2%;
+	box-sizing: border-box;
+}
+.header .search input::placeholder{
+	color: rgb(255,255,255);
+}
+/* 居中部分 */
+
+.container::-webkit-scrollbar{
+	display: none;
+}
+
+.container{
+	flex: 1;
+	overflow: auto;
+}
+.container .banner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.container .banner .bannerimg{
+	width: 100%;
+	position: relative;
+}
+.container .banner .bannerimg img{
+	width: 100%;height: 100%;
+}
+.container .banner .bannerimg .bannerinfo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .banner .bannerimg .bannerinfo .position{
+	display: flex;
+	position: absolute;
+	bottom: 30px;
+}
+.container .banner .bannerimg .bannerinfo .bbimg img{
+	width: 25px;height: 25px;
+	border-right: 1px solid rgb(192, 203, 230);
+	padding-right: 3px;
+	margin-right: 3px;
+	position: relative;
+}
+.container .banner .bannerimg .bannerinfo .bannericon h1{
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+}
+.container .banner .bannernav{
+	display: flex;height: 100px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(224, 224, 224);
+}
+.container .banner .bannernav a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+}
+.container .banner .bannernav a img{
+	width: 50px;height: 50px;
+	border-radius: 50%;
+}
+/* 旅游推荐 */
+.container .recommond{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.container .recommond .title,
+.container .cheap .title,
+.container .recommond .pushimg{
+	width: 100%;
+}
+.container .recommond .title h1,
+.container .cheap .title h1{
+	font-size: 1.1em;
+	font-weight: bold;
+	text-indent: 1.1em;
+	border-bottom: 1px solid rgb(183, 190, 187);
+}
+.container .recommond .pushimg,
+.container .cheap .items{
+	padding: 5px;
+	box-sizing: border-box;
+}
+.container .recommond .pushimg img{
+	width: 100%;height: 100%;
+}
+.container .recommond .pushimg .lessimg{
+	display: flex;
+	justify-content: space-around;
+}
+.container .recommond .pushimg .lessimg{
+	width: 100%;height: 100%;
+	margin-top: 5px;
+}
+.container .recommond .pushimg .lessimg img{
+	width: 50%;
+}
+.container .recommond .pushimg .lessimg :nth-child(1){
+	margin-right: 3px;
+}
+.container .recommond .pushimg .lessimg :nth-child(2){
+	margin-left: 3px;
+}
+/* 折扣游 */
+.container .cheap .items{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.container .cheap .items .item{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+/* .container .cheap .items .item:nth-child(odd){
+	margin-right: 1%;
+} */
+.container .cheap .items .item .itemimg{
+	width: 100%;
+	height: 100%;
+}
+.container .cheap .items .item .itemimg img{
+	width: 100%;height: 100%;
+}
+.container .cheap .items .item .iteminfo{
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.container .cheap .items .item .iteminfo .more{
+	display: flex;
+	justify-content: space-between;
+	color: rgb(245, 116, 54);
+	height: 30px;
+}
+.container .cheap .items .item .iteminfo a{
+	color: #000;
+}
+.container .cheap .items .item .iteminfo .more i{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.container .cheap .items .item .iteminfo .more p span{
+	color: rgb(237, 237, 237);
+	font-size: 12px;
+}
+/* 查看更多 */
+.container .cheap .formore{
+	border-top: 1px solid rgb(183, 190, 187);
+	padding: 20px 0;
+}
+.container .cheap .formore,
+.container .cheap .formore a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(188, 229, 248);
+}
+.container .cheap .formore a img{
+	width: 10px;height: 10px;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+/* 底部导航 */
+.footer{
+	background-color: rgb(242, 242, 242);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 5px 10px;
+	box-sizing: border-box;
+}
+.footer a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 13px;
+	line-height: 20px;
+}
+.footer a img{
+	width: 30px;height: 30px;
+}
+.active{
+	color: rgb(170, 170, 170);
+}

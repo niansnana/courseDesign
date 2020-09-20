@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- <link rel="stylesheet" href="https://at.alicdn.com/t/font_1566706_ixnpah3rrg.css"> -->
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <title>index</title>
+</head>
+
+<body>
+    <canvas id="Mycanvas" style="position:fixed;z-index:-1;"></canvas>
+    <!-- 布局开始 -->
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_main">
+                <div class="main_left">
+                    <!-- <div class="img">
+                        <img src="./img/temp.png" alt="">
+                    </div> -->
+                    <ul>
+                        <li>
+                            <a href="./index.html">
+                                <i class="iconfont icon-yemian-copy"></i>
+                                <span>首页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-guidang"></i>
+                                <span>归档</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-youqinglianjie-"></i>
+                                <span>友情链接</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-theme"></i>
+                                <span>主题</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-guanyuwomen"></i>
+                                <span>关于我</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main_right">
+                    <button type="button" id="for">
+                        <i class="iconfont icon-search"></i>
+                    </button>
+                    <a href="./login.html"><span>退出登录</span></a>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="container_left animated slideInRight">
+                <!-- 个人资料 -->
+                <div class="profile">
+                    <div class="banner">
+                        <!-- <img src="./img/temp.png" alt=""> -->
+                    </div>
+                    <div class="info">
+                        <img src="./img/girl.jpg" alt="">
+                        <a>@nian</a>
+                    </div>
+                    <div class="more">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>30</span>
+                                    <small>文章</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>30</span>
+                                    <small>文章</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>30</span>
+                                    <small>文章</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 个人联系方式 -->
+                <div class="mail">
+                    <ul>
+                        <li>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-youjian"></use>
+                            </svg>
+                            <a href="">niansnana@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-QQqun"></use>
+                            </svg>
+                            <a href="">面向博客编程</a>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-boke"></use>
+                            </svg>
+                            <a href="">面向博客编程</a>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weibo"></use>
+                            </svg>
+                            <a href="">微博</a>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-github-copy"></use>
+                            </svg>
+                            <a href="">Github</a>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-zhihu"></use>
+                            </svg>
+                            <a href="">知乎</a>
+                        </li>
+                        <li>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-bilibili"></use>
+                            </svg>
+                            <a href="">Bilibili</a>
+                        </li>
+                        <li>
+                            <a href="#">我希望，世界和平。</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 永不停止的时间 -->
+                <div class="time">
+                    <p id="lovejs"></p>
+                    <!-- 爱着JS的每一天 -->
+                    <time class="times"></time>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhuti"></use>
+                    </svg>
+                </div>
+                <!-- 最近评论(待定，可能不写) -->
+                <div class="comment"></div>
+            </div>
+            <div class="container_center">
+                <!-- tab 列表 -->
+                <div class="tab animated headShake">
+                    <button type="button" class="btn active">首页</button>
+                    <button type="button" class="btn">文章</button>
+                    <button type="button" class="btn">说说</button>
+                </div>
+                <!-- 全部 -->
+                <div class="tab_content" style="display: block;">
+                    <div class="items">
+                        <div class="item animated flipInX">
+                            <!-- 头像及个人信息 -->
+                            <div class="item_info">
+                                <img src="./img/girl.jpg" alt="">
+                                <a href="#">
+                                    <span>Nian</span>
+                                    <small>3月前</small>
+                                </a>
+                            </div>
+                            <div class="item_content">
+                                <p>“那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。我觉得自己会永远生猛下去，什么也锤不了我。”
+
+                                    ——王小波</p>
+                            </div>
+                            <div class="item_good">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-liulan"></i>
+                                            <span>840</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-pinglun1"></i>
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-dianzan11"></i>
+                                            <span>34</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item animated slideInLeft">
+                            <!-- 头像及个人信息 -->
+                            <div class="item_info">
+                                <img src="./img/girl.jpg" alt="">
+                                <a href="#">
+                                    <span>Nian</span>
+                                    <small>3月前</small>
+                                </a>
+                            </div>
+                            <div class="item_content">
+                                <p>“那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。我觉得自己会永远生猛下去，什么也锤不了我。”
+
+                                    ——王小波</p>
+                            </div>
+                            <div class="item_good">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-liulan"></i>
+                                            <span>840</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-pinglun1"></i>
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-dianzan11"></i>
+                                            <span>34</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item animated slideInRight">
+                            <!-- 头像及个人信息 -->
+                            <div class="item_info">
+                                <img src="./img/girl.jpg" alt="">
+                                <a href="#">
+                                    <span>Nian</span>
+                                    <small>3月前</small>
+                                </a>
+                            </div>
+                            <div class="item_content">
+                                <p>“那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。我觉得自己会永远生猛下去，什么也锤不了我。”
+
+                                    ——王小波</p>
+                            </div>
+                            <div class="item_good">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-liulan"></i>
+                                            <span>840</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-pinglun1"></i>
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-dianzan11"></i>
+                                            <span>34</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item animated slideInLeft">
+                            <!-- 头像及个人信息 -->
+                            <div class="item_info">
+                                <img src="./img/girl.jpg" alt="">
+                                <a href="#">
+                                    <span>Nian</span>
+                                    <small>3月前</small>
+                                </a>
+                            </div>
+                            <div class="item_content">
+                                <p>“那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。我觉得自己会永远生猛下去，什么也锤不了我。”
+
+                                    ——王小波</p>
+                            </div>
+                            <div class="item_good">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-liulan"></i>
+                                            <span>840</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-pinglun1"></i>
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-dianzan11"></i>
+                                            <span>34</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item animated flipInX">
+                            <!-- 头像及个人信息 -->
+                            <div class="item_info">
+                                <img src="./img/girl.jpg" alt="">
+                                <a href="#">
+                                    <span>Nian</span>
+                                    <small>3月前</small>
+                                </a>
+                            </div>
+                            <div class="item_content">
+                                <p>“那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云。后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消失，最后变得像挨了锤的牛一样。我觉得自己会永远生猛下去，什么也锤不了我。”
+
+                                    ——王小波</p>
+                            </div>
+                            <div class="item_good">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-liulan"></i>
+                                            <span>840</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-pinglun1"></i>
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-dianzan11"></i>
+                                            <span>34</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 点我查看更多 -->
+                        <div class="more">
+                            <a href="#">(｡・`ω´･)点我查看更多！</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文章 -->
+                <div class="tab_content">
+                    <div class="items">
+                        <div class="item animated rubberBand">
+                            <!-- 头像及个人信息 -->
+                            <div class="item_info">
+                                <img src="./img/girl.jpg" alt="">
+                                <a href="#">
+                                    <span>Nian</span>
+                                    <small>3月前</small>
+                                </a>
+                            </div>
+                            <div class="item_content">
+                                <a href="#">WordPress</a><a href="#">评论</a>
+                                <img src="./img/banner.jpg" alt="">
+                            </div>
+                            <div class="item_good">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-liulan"></i>
+                                            <span>2.49K</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-pinglun1"></i>
+                                            <span>11</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-dianzan11"></i>
+                                            <span>24</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 说说 -->
+                <div class="tab_content">
+                    <div class="items">
+                        <div class="item animated jackInTheBox">
+                            <!-- 头像及个人信息 -->
+                            <div class="item_info">
+                                <img src="./img/girl.jpg" alt="">
+                                <a href="#">
+                                    <span>Nian</span>
+                                    <small>3月前</small>
+                                </a>
+                            </div>
+                            <div class="item_content">
+                                <p>保持自信，也要学会冷静，谁不是在为了自己喜欢的生活，在用尽全力的奔跑呢。 </p>
+                            </div>
+                            <div class="item_good">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-liulan"></i>
+                                            <span>840</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-pinglun1"></i>
+                                            <span>2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-dianzan11"></i>
+                                            <span>34</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_right animated slideInLeft">
+                <!-- 故事 -->
+                <div class="story">
+                    <p>楼道角落里阳光每天盛开<br>
+                        你很久前也在<br>
+                        很久前的花肥肥地开在窗外<br>
+                        你很久前也毛茸茸地在窗里开<br>
+                        它们为什么能长盛不衰<br>
+                        我们为什么屡战屡败<br>
+                        ——冯唐《记梦》
+                    </p>
+                </div>
+                <!-- 音乐 -->
+                <div class="audio">
+                    <div class="audio_img">
+                        <img src="./img/music.jpg" alt="">
+                        <button type="button" class="plays">
+                            <i class="iconfont icon-bofang" id="switch"></i>
+                        </button>
+                    </div>
+                    <div class="audio_info">
+                        <p>陪你度过漫长岁月 - 陈奕迅</p>
+                        <audio src="./audio/forlonglongwith you.mp3" id="audio"></audio>
+                        <div class="else">
+                            <input type="range" id="range" max="1" min="0" step="0.1" onchange="setvolumn()" />
+                            <span id="audioinfo"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文章 -->
+                <div class="article">
+                    <h1>
+                        <i class="iconfont icon-guidang"></i>
+                        <span>文章</span>
+                    </h1>
+                    <div class="items">
+                        <div class="item">
+                            <p>修复WordPress5.1评论回复按键失效问题（记一次痛苦的寻找bug之旅）Lorem ipsum dolor sit amet.</p>
+                            <ul>
+                                <li><a href="#">
+                                        <i class="iconfont icon-liulan1"></i>
+                                        <span>2.73k</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-youqinglianjie-"></i>
+                                        <span>十月前</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-pinglun1"></i>
+                                        <span>11</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <p>修复WordPress5.1评论回复按键失效问题（记一次痛苦的寻找bug之旅）Lorem ipsum dolor sit amet.</p>
+                            <ul>
+                                <li><a href="#">
+                                        <i class="iconfont icon-liulan1"></i>
+                                        <span>2.73k</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-youqinglianjie-"></i>
+                                        <span>十月前</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-pinglun1"></i>
+                                        <span>11</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <p>修复WordPress5.1评论回复按键失效问题（记一次痛苦的寻找bug之旅）Lorem ipsum dolor sit amet.</p>
+                            <ul>
+                                <li><a href="#">
+                                        <i class="iconfont icon-liulan1"></i>
+                                        <span>2.73k</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-youqinglianjie-"></i>
+                                        <span>十月前</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-pinglun1"></i>
+                                        <span>11</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <p>修复WordPress5.1评论回复按键失效问题（记一次痛苦的寻找bug之旅）Lorem ipsum dolor sit amet.</p>
+                            <ul>
+                                <li><a href="#">
+                                        <i class="iconfont icon-liulan1"></i>
+                                        <span>2.73k</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-youqinglianjie-"></i>
+                                        <span>十月前</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-pinglun1"></i>
+                                        <span>11</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <p>修复WordPress5.1评论回复按键失效问题（记一次痛苦的寻找bug之旅）Lorem ipsum dolor sit amet.</p>
+                            <ul>
+                                <li><a href="#">
+                                        <i class="iconfont icon-liulan1"></i>
+                                        <span>2.73k</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-youqinglianjie-"></i>
+                                        <span>十月前</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class="iconfont icon-pinglun1"></i>
+                                        <span>11</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 最近访客 -->
+                <div class="visitors">
+                    <h1>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-theme"></use>
+                        </svg>
+                        <span>最近访客</span>
+                    </h1>
+                    <div class="items">
+                        <div class="item">
+                            <img src="./img/girl.jpg" alt="">
+                            <h2>nian</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部菜单 -->
+        <footer class="footer">
+            <div class="footer_main">
+                <p>版权所有 © 2017-2019 Nian | 黑ICP备17000197号-1</p>
+                <p>Theme Giligili By Shawn With <i class="iconfont icon-zhuti"></i> | All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- 搜索功能 -->
+        <div class="search">
+            <div class="txt">
+                <h1>请输入你想要搜索的功能</h1>
+                <span id="close">X</span>
+            </div>
+            <div class="input">
+                <input type="text" lang="26" id="every">
+            </div>
+        </div>
+        <!-- 看板娘 -->
+        <div id="luolijump">
+            <img src="./img/lolijump.gif" id="drop">
+        </div>
+        <!-- 置顶 -->
+        <div id="top" style="display: none;">
+            <a href="#">∧</a>
+        </div>
+    </div>
+    <!-- 布局结束 -->
+    <!-- <script src="https://at.alicdn.com/t/font_1566706_esgokagg6gq.js"></script> -->
+    <script src="./iconfont/iconfont.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/activate-power-mode.js"></script>
+    <script>
+        /* 动态打字效果 */
+        POWERMODE.colorful = true; // make power mode colorful
+        POWERMODE.shake = false; // turn off shake
+        document.body.addEventListener('input', POWERMODE);
+    </script>
+</body>
+
+</html>

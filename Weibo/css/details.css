@@ -1,0 +1,436 @@
+@import "../public/reset.css";
+@import "https://at.alicdn.com/t/font_1449542_adad5i0y8zd.css";
+
+/* 公有代码出现问题的加以修改 */
+.wrapper .header .headcontent .left .search i {
+    top: 8px;
+  }
+
+/* 
+  子页面代码
+*/
+.wrapper .container{
+    width: 100%;
+    /* background: url("../img/dog.jpg") repeat-y; */
+    /* background-size: contain; */
+    /* background-position: calc(50% - 305px) top; */
+    background-color: rgb(232, 216, 183);
+    padding: 15px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.wrapper .container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+.wrapper .container .content .weibo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;height: 100%;
+    background-color: #fff;
+    padding: 18px;
+    box-sizing: border-box;
+}
+/* 微博用户简易信息 */
+.wrapper .container .content .weibo .user{
+    display: flex;
+}
+.wrapper .container .content .weibo .user .photo{
+    width: 50px;height: 50px;
+    margin-right: 15px;
+}
+.wrapper .container .content .weibo .user .photo img{
+    width: 100%;height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.wrapper .container .content .weibo .user .name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.wrapper .container .content .weibo .user .name .nickname{
+    display: flex;    
+}
+.wrapper .container .content .weibo .user .name .nickname h1{
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.wrapper .container .content .weibo .user .name .nickname i{
+    /* margin: 7px 2px 0px; */
+    line-height: 25px;
+    color: red;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.wrapper .container .content .weibo .user .name .nickname h1:hover,
+.wrapper .container .content .weibo .user .name .time a:hover{
+    color: coral;
+}
+.wrapper .container .content .weibo .user .name .time{
+    font-size: 12px;
+    color: rgb(161, 128, 144);
+    margin: -2px 0px 5px;
+}
+.wrapper .container .content .weibo .user .follow{
+    margin-left: 35%;
+}
+.wrapper .container .content .weibo .user .follow button{
+    width: 72px;height: 20px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 2px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .15);
+    font-size: 12px;
+    cursor: pointer;
+}
+.wrapper .container .content .weibo .user .follow button:hover{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+}
+.wrapper .container .content .weibo .user .follow button i,
+.wrapper .container .content .weibo .user .follow i:hover{
+    color: rgb(250, 152, 60);
+}
+.wrapper .container .content .weibo .user .follow i{
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+/* 微博发布的内容 */
+.wrapper .container .content .weibo .txt{
+    padding: 5px 5px 5px 65px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.wrapper .container .content .weibo .txt .words :nth-child(2){
+    margin: 40px 0 10px;
+}
+.wrapper .container .content .weibo .txt .words :nth-child(2)  a{
+    color: #eb7350;
+    margin-left: 5px;
+}
+.wrapper .container .content .weibo .txt .videoOrimg{
+    width: 500px;height: 282px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.wrapper .container .content .weibo .txt .videoOrimg video{
+    width: 100%;height: 100%;
+}
+.wrapper .container .content .weibo .txt .videoOrimg .info{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .container .content .weibo .txt .videoOrimg .info span{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+}
+.wrapper .container .content .weibo .txt .videoOrimg .info :nth-child(1){
+    left: 15px;bottom: 12px;
+}
+.wrapper .container .content .weibo .txt .videoOrimg .info :nth-child(2){
+    right: 15px;bottom: 12px;
+}
+.wrapper .container .content .weibo .txt .videoOrimg i{
+    position: absolute;
+    top: 50%;left: 47%;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+}
+.wrapper .container .content .weibo .txt .videoOrimg i:hover{
+    color: rgb(253, 129, 73);
+    transition: all .5s;
+}
+.wrapper .container .content .weibo .txt a{
+    color: #eb7350;
+}
+/* 用户操作，素质三连 */
+.wrapper .container .content .weibo .qualityThree{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.wrapper .container .content .weibo .qualityThree button{
+    height: 39px;
+    line-height: 39px;
+}
+.wrapper .container .content .weibo .qualityThree button:hover{
+    color: #eb7350;
+}
+.wrapper .container .content .weibo .qualityThree>span{
+    height: 30px;
+    border-right: 1px solid rgb(217, 217, 217);
+}
+/* 评论区一片沦陷 */
+.wrapper .container .content .comment{
+    width: 100%;height: 100%;
+    background-color: rgb(242, 242, 245);
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.wrapper .container .content .comment .ad{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 5px 0 10px; */
+    margin: 10px auto;
+    font-size: 12px;
+    position: relative;
+    background-color: rgb(248, 249, 254);
+    border-radius: 2px;
+
+}
+.wrapper .container .content .comment .ad i{
+    margin-top: 12px;
+}
+.wrapper .container .content .comment .ad >:nth-child(1){
+    color: rgb(135, 190, 220);
+}
+.wrapper .container .content .comment .ad :nth-child(3){
+    position: absolute;
+    top: 0;right: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.wrapper .container .content .comment .ad p{
+    color: #808080;
+    margin-left: 5px;
+}
+.wrapper .container .content .comment .ad a{
+    color: #eb7350;
+}
+/* 由我发布评论 */
+.wrapper .container .content .comment .me,
+.wrapper .container .content .comment .me .input .submit{
+    display: flex;
+}
+.wrapper .container .content .comment .me{
+    border-bottom: 1px solid rgb(217, 217, 217);
+    padding-bottom: 10px;
+}
+.wrapper .container .content .comment .me .myphoto{
+    width: 30px;height: 30px;
+    margin-right: 10px;
+}
+.wrapper .container .content .comment .me .myphoto img{
+    width: 100%;height: 100%;
+}
+.wrapper .container .content .comment .me .input>input{
+    width: 100%;height: 25px;
+    border: 1px solid rgb(204, 204, 204);
+    text-indent: 5px;
+    margin-bottom: 5px;
+}
+.wrapper .container .content .comment .me .input>input:focus{
+    border: 1px solid rgb(253, 129, 73);
+}
+.wrapper .container .content .comment .me .input .submit .add{
+    margin-right: 220px;
+}
+.wrapper .container .content .comment .me .input .submit .add i{
+    cursor: pointer;
+}
+.wrapper .container .content .comment .me .input .submit button{
+    width: 60px;height: 25px;
+    background-color: rgb(255, 192, 159);
+    color: rgb(255, 251, 255);
+}
+/* 其他人的评论 */
+.wrapper .container .content .comment .other{
+    margin-top: 10px;
+}
+.wrapper .container .content .comment .other button{
+    background-color: inherit;
+}
+.wrapper .container .content .comment .other>span{
+    height: 10px;
+    border-right: 1px solid rgb(217, 217, 217);
+}
+.hotspanactive{
+    font-weight: bold;
+}
+.wrapper .container .content .comment .other .morecomment{
+    width: 560px;
+    overflow: hidden;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson{
+    display: flex;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .perphoto{
+    width: 30px;height: 30px;
+    margin-right: 10px;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .perphoto img{
+    width: 100%;height: 100%;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo{
+        display: flex;
+        flex-direction: column;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .mycomm p{
+    font-size: 12px;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .mycomm a{
+    color: #eb7350;
+    font-size: 13px;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .mycomm p i{
+    color: #eb7350;
+
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .mycomm .oelse{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .mycomm .oelse span{
+    font-size: 12px;
+    cursor: pointer;
+}
+/* 别人的回复 */
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .othercomm{
+    background-color: rgb(234, 234, 236);
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .othercomm ul li{
+    line-height: 1.5em;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .othercomm ul li:not(:last-child){
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .othercomm ul li .winfo a{
+    color: #eb7350;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .othercomm ul li .oelse{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .container .content .comment .other .morecomment .oneperson .comminfo .othercomm ul li .oelse span{
+    cursor: pointer;
+}
+
+/* 右边相关推荐 */
+.wrapper .container .recommend{
+    width: 300px;height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.wrapper .container .recommend .title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(242, 242, 245);
+}
+.wrapper .container .recommend .title h1,
+.wrapper .container .recommend .title a{
+    margin: 0 5px 5px;
+    cursor: pointer;
+}
+.wrapper .container .recommend .title h1:hover,
+.wrapper .container .recommend .title a:hover{
+    color: #eb7350;
+}
+.wrapper .container .recommend .items{
+    height: 820px;
+    overflow: auto;
+}
+.wrapper .container .recommend .items::-webkit-scrollbar{
+    display: none;
+}
+.wrapper .container .recommend .items .item{
+    margin-top: 8px;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+.wrapper .container .recommend .items .item .nuser,
+.wrapper .container .recommend .items .item .nuser .nuserinfo{
+    display: flex;
+}
+.wrapper .container .recommend .items .item .nuser{
+    justify-content: space-between;
+}
+.wrapper .container .recommend .items .item .nuser .nuserinfo .np{
+    width: 30px;height: 30px;
+    margin-right: 6px;
+}
+.wrapper .container .recommend .items .item .nuser .nuserinfo .np img{
+    width: 100%;height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.wrapper .container .recommend .items .item .nuser .nuserinfo .ns h1{
+    font-weight: bold;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+.wrapper .container .recommend .items .item .nuser .nuserinfo .ns span{
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+.wrapper .container .recommend .items .item .nuser .nuserinfo .ns h1:hover,
+.wrapper .container .recommend .items .item .nuser .nuserinfo .ns span:hover{
+    color: #eb7350;
+}
+.wrapper .container .recommend .items .item .nuser button{
+    width: 58px;height: 20px;
+    line-height: 17px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 2px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .15);
+    font-size: 12px;
+    cursor: pointer;
+}
+.wrapper .container .recommend .items .item .nuser button i{
+    color: #eb7350;
+}
+.wrapper .container .recommend .items .item .ntxt p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.wrapper .container .recommend .items .item .ntxt p a{
+    color: #eb7350;
+}
+.wrapper .container .recommend .items .item .nvi{
+    width: 258px;height: 161px;
+    position: relative;
+    margin-top: 5px;
+}
+.wrapper .container .recommend .items .item .nvi img{
+    width: 100%;height: 100%;
+}
+.wrapper .container .recommend .items .item .nvi i{
+    position: absolute;
+    top: 50%;left: 45%;
+    color: #fff;
+    font-size: 3em;
+}
+.wrapper .container .recommend .items .item .nvi i:hover{
+    color: #eb7350;
+    transition: all .5s;
+}
+.wrapper .container .recommend .items .item .nmore{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.wrapper .container .recommend .items .item .nmore a{
+    margin: 0 10px;
+}
+.wrapper .container .recommend .items .item .nmore a i{
+    vertical-align: 5;
+}
